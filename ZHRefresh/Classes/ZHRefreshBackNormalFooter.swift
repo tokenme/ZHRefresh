@@ -34,7 +34,7 @@ public class ZHRefreshBackNormalFooter: ZHRefreshBackStateFooter {
     /// 菊花
     private var _loadingView: UIActivityIndicatorView?
     /// 默认`.gray`
-    public var activityStyle: UIActivityIndicatorViewStyle = .gray {
+    public var activityStyle: UIActivityIndicatorView.Style = .gray {
         didSet {
             self._loadingView = nil
             self.setNeedsLayout()
@@ -53,7 +53,7 @@ public class ZHRefreshBackNormalFooter: ZHRefreshBackStateFooter {
     /// 菊花
     final var loadingView: UIActivityIndicatorView! {
         if _loadingView == nil {
-            _loadingView = UIActivityIndicatorView(activityIndicatorStyle: activityStyle)
+            _loadingView = UIActivityIndicatorView(style: activityStyle)
             self.addSubview(_loadingView!)
         }
         return _loadingView

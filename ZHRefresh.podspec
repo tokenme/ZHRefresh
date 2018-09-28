@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZHRefresh'
-  s.version          = '0.1.9'
+  s.version          = '0.2.0'
   s.summary          = 'a refresh control write by Swift which like MJRefresh'
   s.swift_version    = '4.0'
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: 1. add Custom refresh style
-      2. Adaptive iPhoneX and other device  
+      2. Adaptive iPhoneX and other device
                        DESC
 
   s.homepage         = 'https://github.com/SummerHF/ZHRefresh'
