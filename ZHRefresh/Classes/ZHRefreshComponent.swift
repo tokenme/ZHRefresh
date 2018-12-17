@@ -267,7 +267,7 @@ open class ZHRefreshComponent: UIView {
     }
 
     /// 移除监听
-    func removeObservers() {
+    public func removeObservers() {
         self.superview?.removeObserver(self, forKeyPath: ZHRefreshKeys.contentOffset)
         self.superview?.removeObserver(self, forKeyPath: ZHRefreshKeys.contentSize)
         self.pan?.removeObserver(self, forKeyPath: ZHRefreshKeys.panState)
